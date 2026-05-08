@@ -1,6 +1,3 @@
-// main.js - autoplay and simple nav
-// beginner-style code, intentionally not perfect
-
 var carouselImages = document.getElementById('carouselImages');
 var slides = carouselImages.children;
 var totalSlides = slides.length;
