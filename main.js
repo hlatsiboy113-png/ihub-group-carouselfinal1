@@ -2,6 +2,7 @@ var carouselImages = document.getElementById('carouselImages');
 var slides = carouselImages.children;
 var totalSlides = slides.length;
 var currentSlide = 0;
+slides[0].style.opacity = 1;
 var autoplayTimer;
 
 function showSlide(index) {
@@ -12,7 +13,7 @@ function showSlide(index) {
     index = 0;
   }
   currentSlide = index;
-  carouselImages.style.transform = 'translateX(' + (-index * 100) + '%)';
+  applyFadeTransition(index);
   var counter = document.getElementById('currentSlide');
   if (counter) {
     counter.textContent = index + 1;

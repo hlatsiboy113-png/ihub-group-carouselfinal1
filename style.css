@@ -43,16 +43,19 @@ body {
 }
 
 .carousel-images {
-    display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
-    /* this transition makes the slide smooth when moving between images */
 }
 
 .carousel-slide {
-    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
