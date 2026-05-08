@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Tools Carousel</title>
+    <!-- link to the external CSS file to add styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- main carousel container for the images -->
+    <div class="carousel-container">
+        <!-- title of the carousel goes here- It should be Development tools as per agreement -->
+        <h1 class="carousel-title">Development Tools</h1>
+
+        <!-- the wrapper of the carousel - this is where images appear -->
+        <div class="carousel-wrapper">
+            <!-- this div holds all the slides and moves left/right -->
+            <div class="carousel-images" id="carouselImages">
+                <!-- Picture  1- Discord logo -->
+                <div class="carousel-slide">
+                    <img class="slide" src="assets/Discord-logo.avif" alt="Discord logo">
+                    <div class="tool-emoji">💬</div>
+                    <div class="tool-name">Discord</div>
+                    <div class="tool-description">Communication platform for developers and teams</div>
+                </div>
+
+                <!-- Picture 2 - VS Code logo -->
+                <div class="carousel-slide">
+                    <img class="slide" src="assets/VS-Code-logo.avif" alt="VS Code logo">
+                    <div class="tool-emoji">💻</div>
+                    <div class="tool-name">VS Code</div>
+                    <div class="tool-description">Popular code editor for web development</div>
+                </div>
+
+                <!-- Picture 3 - Netlify logo -->
+                <div class="carousel-slide">
+                    <img class="slide" src="assets/Netlify-logo.avif" alt="Netlify logo">
+                    <div class="tool-emoji">🚀</div>
+                    <div class="tool-name">Netlify</div>
+                    <div class="tool-description">Platform for deploying and hosting web apps</div>
+                </div>
+
+                <!-- Picture 4 - GitHub -->
+                <div class="carousel-slide">
+                    <img class="slide" src="assets/GitHub-logo.avif" alt="GitHub logo">
+                    <div class="tool-emoji">🐙</div>
+                    <div class="tool-name">GitHub</div>
+                    <div class="tool-description">Version control and collaboration platform</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons to navigate between slides when being clicked -->
+        <div class="carousel-buttons">
+            <!-- previous button (left arrow) - goes to the slide before current one -->
+            <button class="carousel-btn" id="prevBtn" onclick="previousSlide()">← Previous</button>
+            <!-- next button (right arrow) - goes to the slide after current one -->
+            <button class="carousel-btn" id="nextBtn" onclick="nextSlide()">Next →</button>
+        </div>
+
+        <!-- dots that show which slide you're currently viewing on the image carousel -->
+        <div class="carousel-dots" id="dotsContainer">
+            <!-- Reminder dots will be created by JavaScript by whoever is responsible for that feature -->
+        </div>
+
+        <!-- this shows the current slide number like "1 of 4" -->
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> of <span id="totalSlides">4</span>
+        </div>
+    </div>
+
+    <!-- link to the external JavaScript file to make it function on all the agreed features -->
+    <script src="script.js"></script>
+</body>
+</html>
